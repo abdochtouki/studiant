@@ -159,38 +159,10 @@ void afficher_liste(inscrit* liste){
 
     }
 }
-/*inscrit * cherecher_inscrit(inscrit * liste,char* N,char* Pr){
- inscrit * P=liste;
-  while(P!=NULL){
-         if(strcmp(P->Nom,N)==0 && strcmp(P->Prenom,Pr)==0)
-        {
-        return P;
-        }
-        P=P->next;
-       }
-
-     exit(1);
-     return NULL;
-} 
 
 
-inscrit* cherecher_inscrit(inscrit* liste, char* N, char* Pr) {
-    inscrit* P = liste;
-    if(liste == NULL)
 
-    return NULL;
-      while (P != NULL) {
-        
-             if (P->Nom!=NULL&&P->Prenom!=NULL && strcmp(N, P->Nom) == 0 && strcmp(Pr, P->Prenom) == 0)
-              {
-             return P;
-              }
-           P = P->next;
-        }
-    
-    return NULL;
-}
-*/
+
 inscrit* chercher_inscrit(inscrit* liste, char* N, char* Pr) {
     inscrit* P = liste;
     if (liste == NULL) {
